@@ -163,7 +163,7 @@ mobs:spawn({
 end
 
 
-mobs:register_egg("flower_cow:flower_cow", "flower_cow", "mobs_cow_inv.png")
+mobs:register_egg("flower_cow:flower_cow", "Flower cow", "mobs_cow_inv.png")
 
 
 

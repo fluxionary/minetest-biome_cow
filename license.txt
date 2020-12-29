@@ -21,4 +21,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 Original cow textures by sirrobzeroone under CC0, subsequently altered
+New flower cow textures by DrBlebbins under CC0
 
