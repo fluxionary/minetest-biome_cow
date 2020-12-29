@@ -162,6 +162,20 @@ mobs:spawn({
 })
 end
 
+-- Craft the flower cow from a cow and a flower
+minetest.register_craft({
+	type = "shapeless",
+	output = "flower_cow:flower_cow",
+	recipe = {"group:flower", "mobs_animal:cow"}
+})
+
+-- Craft the flower cow from a tamed cow and a flower
+minetest.register_craft({
+	type = "shapeless",
+	output = "flower_cow:flower_cow",
+	recipe = {"group:flower", "mobs_animal:cow_set"}
+})
+
 
 mobs:register_egg("flower_cow:flower_cow", "Flower cow", "mobs_cow_inv.png")
 
