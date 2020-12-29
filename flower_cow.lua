@@ -17,7 +17,7 @@ mobs:register_mob("flower_cow:flower_cow", {
 	mesh = "mobs_cow.b3d",
 	textures = {
 		{"flower_cow.png"},
-		--{"flower_cow2.png"},
+		{"flower_cow2.png"},
 	},
 	makes_footstep_sound = true,
 	sounds = {
