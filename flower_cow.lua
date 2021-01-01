@@ -81,7 +81,7 @@ mobs:register_mob("flower_cow:flower_cow", {
 		{"group:grass", "flowers:dandelion_white", 0},
 		{"default:dirt", "default:dirt_with_grass", -1},
 	},
---	stay_near = {{"farming:straw", "group:grass"}, 10},
+	stay_near = {{"farming:straw", "farming:jackolantern_on"}, 5},
 	fear_height = 2,
 	on_rightclick = function(self, clicker)
 
