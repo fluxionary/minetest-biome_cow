@@ -79,7 +79,7 @@ mobs:register_mob("flower_cow:flower_cow", {
 		{"group:grass", "flowers:geranium", 0},
 		{"group:grass", "flowers:viola", 0},
 		{"group:grass", "flowers:dandelion_white", 0},
-		{"default:dirt", "default:dirt_with_grass", -1}
+		{"default:dirt", "default:dirt_with_grass", -1},
 	},
 --	stay_near = {{"farming:straw", "group:grass"}, 10},
 	fear_height = 2,
@@ -112,7 +112,7 @@ mobs:register_mob("flower_cow:flower_cow", {
 
 			if self.gotten == true then
 				minetest.chat_send_player(name,
-					S("Flower cow already milked!"))
+					"Flower cow already milked!")
 				return
 			end
 
@@ -144,6 +144,12 @@ mobs:register_mob("flower_cow:flower_cow", {
 			self.food = 0
 			self.gotten = false
 		end
+
+		-- Prevent a cow from producing grass on top of air (floating), or stone, or whatever
+		local myPos = self.object:get_pos()
+		myPos.y = myPos.y - 1.0
+		local myNode = minetest.get_node(myPos)
+		return (myNode.name == "default:dirt_with_grass") or (myNode.name == "default:dirt")
 	end,
 })
 
