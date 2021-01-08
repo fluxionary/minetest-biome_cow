@@ -183,7 +183,7 @@ minetest.register_craft({
 })
 
 
-mobs:register_egg("flower_cow:flower_cow", "Flower cow", "mobs_cow_inv.png")
+mobs:register_egg("flower_cow:flower_cow", "Flower cow", "flower_cow_inv.png")
 
 
 
