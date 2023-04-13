@@ -1,7 +1,4 @@
-# flower_cow.lua
-
-Flower cow =
-Flower cow already milked! =
-
 # init.lua
-[MOD] Flower cow loaded =
+
+biome cow =
+biome cow already milked! =

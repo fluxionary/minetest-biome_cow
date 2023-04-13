@@ -1,0 +1,11 @@
+{
+    "type": "MOD",
+    "name": "biome_cow",
+    "title": "biome_cow",
+    "license": "AGPL-3.0-or-later",
+    "media_license": "CC-BY-SA-4.0",
+    "repo": "https://github.com/fluxionary/minetest-biome_cow.git",
+    "website": "https://github.com/fluxionary/minetest-biome_cow",
+    "issue_tracker": "https://github.com/fluxionary/minetest-biome_cow/issues",
+    "short_description": "a cow-shaped mob which puts down plants native to the local biome"
+}
